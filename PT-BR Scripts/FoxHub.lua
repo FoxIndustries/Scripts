@@ -1,4 +1,3 @@
-
 -- Instances:
 
 local FoxHub = Instance.new("ScreenGui")
@@ -29,7 +28,6 @@ local UICorner_9 = Instance.new("UICorner")
 local Scrolling = Instance.new("ScrollingFrame")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local UICorner_11 = Instance.new("UICorner")
 
 --Properties:
 
@@ -50,7 +48,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0326797403, 0, 0.0475220643, 0)
 TextLabel.Size = UDim2.new(0, 285, 0, 67)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Welcome... Player !"
+TextLabel.Text = "Welcome. Player !"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -245,12 +243,9 @@ TextButton_2.TextWrapped = true
 UICorner_10.CornerRadius = UDim.new(0.075000003, 0)
 UICorner_10.Parent = TextButton_2
 
-UICorner_11.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_11.Parent = Scrolling
-
 -- Scripts:
 
-local function LPHCPOY_fake_script() -- Frame.Drag 
+local function CAAFPQ_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -293,18 +288,19 @@ local function LPHCPOY_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(LPHCPOY_fake_script)()
-local function CVASZWQ_fake_script() -- exit1.LocalScript 
+coroutine.wrap(CAAFPQ_fake_script)()
+local function MUPI_fake_script() -- exit1.LocalScript 
 	local script = Instance.new('LocalScript', exit1)
 
+	
 	function leftClick()
 		script.Parent.Parent.warn.Visible = true
 	end
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(CVASZWQ_fake_script)()
-local function GBNEWBR_fake_script() -- kill.LocalScript 
+coroutine.wrap(MUPI_fake_script)()
+local function LKRVA_fake_script() -- kill.LocalScript 
 	local script = Instance.new('LocalScript', kill)
 
 	function leftClick()
@@ -313,8 +309,8 @@ local function GBNEWBR_fake_script() -- kill.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(GBNEWBR_fake_script)()
-local function TBNOO_fake_script() -- exit.LocalScript 
+coroutine.wrap(LKRVA_fake_script)()
+local function YXMH_fake_script() -- exit.LocalScript 
 	local script = Instance.new('LocalScript', exit)
 
 	function leftClick()
@@ -323,8 +319,8 @@ local function TBNOO_fake_script() -- exit.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(TBNOO_fake_script)()
-local function ZVAOWW_fake_script() -- Start.LocalScript 
+coroutine.wrap(YXMH_fake_script)()
+local function RLSOCF_fake_script() -- Start.LocalScript 
 	local script = Instance.new('LocalScript', Start)
 
 	function leftClick()
@@ -337,8 +333,8 @@ local function ZVAOWW_fake_script() -- Start.LocalScript
 	local player = game.Players.LocalPlayer
 	script.Parent.Parent.Parent.Main.Player.Text = "Welcome, " ..player.DisplayName.. " To FoxHub !"
 end
-coroutine.wrap(ZVAOWW_fake_script)()
-local function ZJNP_fake_script() -- Support.LocalScript 
+coroutine.wrap(RLSOCF_fake_script)()
+local function AVKXJYO_fake_script() -- Support.LocalScript 
 	local script = Instance.new('LocalScript', Support)
 
 	function leftClick()
@@ -347,8 +343,8 @@ local function ZJNP_fake_script() -- Support.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(ZJNP_fake_script)()
-local function NKEKP_fake_script() -- Credits.LocalScript 
+coroutine.wrap(AVKXJYO_fake_script)()
+local function YFDPIM_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	function leftClick()
@@ -357,8 +353,8 @@ local function NKEKP_fake_script() -- Credits.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(NKEKP_fake_script)()
-local function GSRETO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YFDPIM_fake_script)()
+local function UGOK_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	function leftClick()
@@ -367,9 +363,29 @@ local function GSRETO_fake_script() -- TextButton.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(GSRETO_fake_script)()
--- Main.LocalScript is disabled.
-local function HXWS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(UGOK_fake_script)()
+local function DLWX_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local clicked = script.j.Value
+	
+	local function Input(input, gameProcessedEvent)
+		if input.KeyCode == Enum.KeyCode.Q then
+			if clicked == false then
+				script.Parent.Parent.Main.Visible = false
+				clicked = true
+			else
+				script.Parent.Parent.Main.Visible = true
+				clicked = false
+			end
+		end
+	end
+	UserInputService.InputBegan:Connect(Input)
+end
+coroutine.wrap(DLWX_fake_script)()
+local function ZHXXVX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	function leftClick()
@@ -378,8 +394,8 @@ local function HXWS_fake_script() -- TextButton_2.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(HXWS_fake_script)()
-local function RWHGOY_fake_script() -- Main.drag2 
+coroutine.wrap(ZHXXVX_fake_script)()
+local function UZFYSA_fake_script() -- Main.drag2 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -422,4 +438,20 @@ local function RWHGOY_fake_script() -- Main.drag2
 		end
 	end)
 end
-coroutine.wrap(RWHGOY_fake_script)()
+coroutine.wrap(UZFYSA_fake_script)()
+local function FZVDMV_fake_script() -- FoxHub.LocalScript 
+	local script = Instance.new('LocalScript', FoxHub)
+
+		folder = Instance.new("Folder", workspace)
+		folder.Name = "FoxHubThings"
+	
+		value = Instance.new("BoolValue", folder)
+		value.Name = "Check"
+		value.Value = "true"
+	
+	if workspace.FoxHubThings.Check == true then
+		warn("FoxHub Warn: Loaded.")
+	end
+	
+end
+coroutine.wrap(FZVDMV_fake_script)()
