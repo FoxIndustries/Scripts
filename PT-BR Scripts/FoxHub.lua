@@ -14,20 +14,19 @@ local UICorner_3 = Instance.new("UICorner")
 local Start = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Support = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local Credits = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local WIP = Instance.new("Frame")
 local warnexit_2 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local UICorner_7 = Instance.new("UICorner")
-local UICorner_8 = Instance.new("UICorner")
 local Main = Instance.new("Frame")
 local Player = Instance.new("TextLabel")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Scrolling = Instance.new("ScrollingFrame")
 local TextButton_2 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
@@ -48,7 +47,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.0326797403, 0, 0.0475220643, 0)
 TextLabel.Size = UDim2.new(0, 285, 0, 67)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Welcome. Player !"
+TextLabel.Text = "Welcome... Player !"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -144,9 +143,6 @@ Support.TextScaled = true
 Support.TextSize = 14.000
 Support.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_5.Parent = Support
-
 Credits.Name = "Credits"
 Credits.Parent = Frame
 Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -160,8 +156,8 @@ Credits.TextScaled = true
 Credits.TextSize = 14.000
 Credits.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_6.Parent = Credits
+UICorner_5.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_5.Parent = Credits
 
 WIP.Name = "WIP"
 WIP.Parent = Frame
@@ -193,11 +189,11 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_7.Parent = WIP
+UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_6.Parent = WIP
 
-UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_8.Parent = Frame
+UICorner_7.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_7.Parent = Frame
 
 Main.Name = "Main"
 Main.Parent = FoxHub
@@ -219,8 +215,8 @@ Player.TextScaled = true
 Player.TextSize = 14.000
 Player.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_9.Parent = Player
+UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_8.Parent = Player
 
 Scrolling.Name = "Scrolling"
 Scrolling.Parent = Main
@@ -240,12 +236,12 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_10.Parent = TextButton_2
+UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_9.Parent = TextButton_2
 
 -- Scripts:
 
-local function CAAFPQ_fake_script() -- Frame.Drag 
+local function VHZD_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -288,8 +284,8 @@ local function CAAFPQ_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(CAAFPQ_fake_script)()
-local function MUPI_fake_script() -- exit1.LocalScript 
+coroutine.wrap(VHZD_fake_script)()
+local function ZSIC_fake_script() -- exit1.LocalScript 
 	local script = Instance.new('LocalScript', exit1)
 
 	
@@ -299,8 +295,8 @@ local function MUPI_fake_script() -- exit1.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(MUPI_fake_script)()
-local function LKRVA_fake_script() -- kill.LocalScript 
+coroutine.wrap(ZSIC_fake_script)()
+local function XYIFNP_fake_script() -- kill.LocalScript 
 	local script = Instance.new('LocalScript', kill)
 
 	function leftClick()
@@ -309,8 +305,8 @@ local function LKRVA_fake_script() -- kill.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(LKRVA_fake_script)()
-local function YXMH_fake_script() -- exit.LocalScript 
+coroutine.wrap(XYIFNP_fake_script)()
+local function KKRRFZ_fake_script() -- exit.LocalScript 
 	local script = Instance.new('LocalScript', exit)
 
 	function leftClick()
@@ -319,8 +315,8 @@ local function YXMH_fake_script() -- exit.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(YXMH_fake_script)()
-local function RLSOCF_fake_script() -- Start.LocalScript 
+coroutine.wrap(KKRRFZ_fake_script)()
+local function YHUJ_fake_script() -- Start.LocalScript 
 	local script = Instance.new('LocalScript', Start)
 
 	function leftClick()
@@ -333,8 +329,8 @@ local function RLSOCF_fake_script() -- Start.LocalScript
 	local player = game.Players.LocalPlayer
 	script.Parent.Parent.Parent.Main.Player.Text = "Welcome, " ..player.DisplayName.. " To FoxHub !"
 end
-coroutine.wrap(RLSOCF_fake_script)()
-local function AVKXJYO_fake_script() -- Support.LocalScript 
+coroutine.wrap(YHUJ_fake_script)()
+local function YQOCIID_fake_script() -- Support.LocalScript 
 	local script = Instance.new('LocalScript', Support)
 
 	function leftClick()
@@ -343,8 +339,8 @@ local function AVKXJYO_fake_script() -- Support.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(AVKXJYO_fake_script)()
-local function YFDPIM_fake_script() -- Credits.LocalScript 
+coroutine.wrap(YQOCIID_fake_script)()
+local function SKIHO_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	function leftClick()
@@ -353,8 +349,8 @@ local function YFDPIM_fake_script() -- Credits.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(YFDPIM_fake_script)()
-local function UGOK_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SKIHO_fake_script)()
+local function TFQR_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	function leftClick()
@@ -363,8 +359,8 @@ local function UGOK_fake_script() -- TextButton.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(UGOK_fake_script)()
-local function DLWX_fake_script() -- Main.LocalScript 
+coroutine.wrap(TFQR_fake_script)()
+local function OYTWHS_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -384,18 +380,36 @@ local function DLWX_fake_script() -- Main.LocalScript
 	end
 	UserInputService.InputBegan:Connect(Input)
 end
-coroutine.wrap(DLWX_fake_script)()
-local function ZHXXVX_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(OYTWHS_fake_script)()
+local function TYRWZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	function leftClick()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/ACS"))()
+		local plr = game.Players.LocalPlayer
+		local Evt = game.ReplicatedStorage.ACS_Engine.Eventos
+	
+		local Settings = {
+			["ExplosiveHit"] = true,
+			["ExPressure"] = math.huge,
+			["ExpRadius"] = math.huge,
+			["DestroyJointRadiusPercent"] = math.huge,
+			["ExplosionDamage"] = math.huge,
+		}
+	
+	
+		while wait() do 
+			pcall(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					game.ReplicatedStorage.ACS_Engine.Eventos.Hit:FireServer(v.Character.Head.Position, v.Character.Head, v.Character.Head.Position, Enum.Material.Plastic, Settings)
+				end 
+			end)
+		end
 	end
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(ZHXXVX_fake_script)()
-local function UZFYSA_fake_script() -- Main.drag2 
+coroutine.wrap(TYRWZ_fake_script)()
+local function SFZF_fake_script() -- Main.drag2 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -438,20 +452,4 @@ local function UZFYSA_fake_script() -- Main.drag2
 		end
 	end)
 end
-coroutine.wrap(UZFYSA_fake_script)()
-local function FZVDMV_fake_script() -- FoxHub.LocalScript 
-	local script = Instance.new('LocalScript', FoxHub)
-
-		folder = Instance.new("Folder", workspace)
-		folder.Name = "FoxHubThings"
-	
-		value = Instance.new("BoolValue", folder)
-		value.Name = "Check"
-		value.Value = "true"
-	
-	if workspace.FoxHubThings.Check == true then
-		warn("FoxHub Warn: Loaded.")
-	end
-	
-end
-coroutine.wrap(FZVDMV_fake_script)()
+coroutine.wrap(SFZF_fake_script)()
