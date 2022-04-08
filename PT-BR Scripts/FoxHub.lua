@@ -1,23 +1,35 @@
+
 -- Instances:
 
 local FoxHub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
 local exit1 = Instance.new("TextButton")
-local warn = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local warnexit = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
 local kill = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local Start = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local Support = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local Credits = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 local WIP = Instance.new("Frame")
-local warnexit = Instance.new("TextLabel")
+local warnexit_2 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Main = Instance.new("Frame")
 local Player = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
 local Scrolling = Instance.new("ScrollingFrame")
 local TextButton_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 
 --Properties:
 
@@ -44,6 +56,9 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
+UICorner.CornerRadius = UDim.new(0.075000003, 0)
+UICorner.Parent = TextLabel
+
 exit1.Name = "exit1"
 exit1.Parent = Frame
 exit1.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
@@ -53,14 +68,17 @@ exit1.Text = "X"
 exit1.TextColor3 = Color3.fromRGB(0, 0, 0)
 exit1.TextSize = 14.000
 
-warn.Name = "warn"
-warn.Parent = Frame
-warn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-warn.Position = UDim2.new(1.12418306, 0, -0.00226295553, 0)
-warn.Size = UDim2.new(0, 563, 0, 111)
-warn.Visible = false
+UICorner_2.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_2.Parent = exit1
 
-TextLabel_2.Parent = warn
+warnexit.Name = "warnexit"
+warnexit.Parent = Frame
+warnexit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+warnexit.Position = UDim2.new(1.12418306, 0, -0.00226295553, 0)
+warnexit.Size = UDim2.new(0, 563, 0, 111)
+warnexit.Visible = false
+
+TextLabel_2.Parent = warnexit
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0, 0, 0.00578521192, 0)
@@ -73,7 +91,7 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 kill.Name = "kill"
-kill.Parent = warn
+kill.Parent = warnexit
 kill.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 kill.Position = UDim2.new(0.54884547, 0, 0.144144133, 0)
 kill.Size = UDim2.new(0, 100, 0, 79)
@@ -85,7 +103,7 @@ kill.TextSize = 14.000
 kill.TextWrapped = true
 
 exit.Name = "exit"
-exit.Parent = warn
+exit.Parent = warnexit
 exit.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 exit.Position = UDim2.new(0.767317951, 0, 0.144144133, 0)
 exit.Size = UDim2.new(0, 100, 0, 79)
@@ -95,6 +113,9 @@ exit.TextColor3 = Color3.fromRGB(0, 0, 0)
 exit.TextScaled = true
 exit.TextSize = 14.000
 exit.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_3.Parent = warnexit
 
 Start.Name = "Start"
 Start.Parent = Frame
@@ -109,6 +130,9 @@ Start.TextScaled = true
 Start.TextSize = 14.000
 Start.TextWrapped = true
 
+UICorner_4.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_4.Parent = Start
+
 Support.Name = "Support"
 Support.Parent = Frame
 Support.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -121,6 +145,9 @@ Support.TextColor3 = Color3.fromRGB(0, 0, 0)
 Support.TextScaled = true
 Support.TextSize = 14.000
 Support.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_5.Parent = Support
 
 Credits.Name = "Credits"
 Credits.Parent = Frame
@@ -135,6 +162,9 @@ Credits.TextScaled = true
 Credits.TextSize = 14.000
 Credits.TextWrapped = true
 
+UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_6.Parent = Credits
+
 WIP.Name = "WIP"
 WIP.Parent = Frame
 WIP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -142,17 +172,17 @@ WIP.Position = UDim2.new(1, 0, 0.00905182213, 0)
 WIP.Size = UDim2.new(0, 217, 0, 437)
 WIP.Visible = false
 
-warnexit.Name = "warnexit"
-warnexit.Parent = WIP
-warnexit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-warnexit.Position = UDim2.new(0.0368663594, 0, 0.038901601, 0)
-warnexit.Size = UDim2.new(0, 200, 0, 165)
-warnexit.Font = Enum.Font.SourceSans
-warnexit.Text = "Well... This is not done yet, Maybe in Next Update?"
-warnexit.TextColor3 = Color3.fromRGB(0, 0, 0)
-warnexit.TextScaled = true
-warnexit.TextSize = 14.000
-warnexit.TextWrapped = true
+warnexit_2.Name = "warnexit"
+warnexit_2.Parent = WIP
+warnexit_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+warnexit_2.Position = UDim2.new(0.0368663594, 0, 0.038901601, 0)
+warnexit_2.Size = UDim2.new(0, 200, 0, 165)
+warnexit_2.Font = Enum.Font.SourceSans
+warnexit_2.Text = "Well... This is not done yet, Maybe in Next Update?"
+warnexit_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+warnexit_2.TextScaled = true
+warnexit_2.TextSize = 14.000
+warnexit_2.TextWrapped = true
 
 TextButton.Parent = WIP
 TextButton.BackgroundColor3 = Color3.fromRGB(100, 0, 1)
@@ -164,6 +194,12 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_7.Parent = WIP
+
+UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_8.Parent = Frame
 
 Main.Name = "Main"
 Main.Parent = FoxHub
@@ -185,6 +221,9 @@ Player.TextScaled = true
 Player.TextSize = 14.000
 Player.TextWrapped = true
 
+UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_9.Parent = Player
+
 Scrolling.Name = "Scrolling"
 Scrolling.Parent = Main
 Scrolling.Active = true
@@ -203,9 +242,15 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
+UICorner_10.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_10.Parent = TextButton_2
+
+UICorner_11.CornerRadius = UDim.new(0.075000003, 0)
+UICorner_11.Parent = Scrolling
+
 -- Scripts:
 
-local function TEQXC_fake_script() -- Frame.Drag 
+local function LPHCPOY_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -248,8 +293,8 @@ local function TEQXC_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(TEQXC_fake_script)()
-local function NRNRVGI_fake_script() -- exit1.LocalScript 
+coroutine.wrap(LPHCPOY_fake_script)()
+local function CVASZWQ_fake_script() -- exit1.LocalScript 
 	local script = Instance.new('LocalScript', exit1)
 
 	function leftClick()
@@ -258,8 +303,8 @@ local function NRNRVGI_fake_script() -- exit1.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(NRNRVGI_fake_script)()
-local function FTHPO_fake_script() -- kill.LocalScript 
+coroutine.wrap(CVASZWQ_fake_script)()
+local function GBNEWBR_fake_script() -- kill.LocalScript 
 	local script = Instance.new('LocalScript', kill)
 
 	function leftClick()
@@ -268,8 +313,8 @@ local function FTHPO_fake_script() -- kill.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(FTHPO_fake_script)()
-local function IOJA_fake_script() -- exit.LocalScript 
+coroutine.wrap(GBNEWBR_fake_script)()
+local function TBNOO_fake_script() -- exit.LocalScript 
 	local script = Instance.new('LocalScript', exit)
 
 	function leftClick()
@@ -278,12 +323,11 @@ local function IOJA_fake_script() -- exit.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(IOJA_fake_script)()
-local function CAMC_fake_script() -- Start.LocalScript 
+coroutine.wrap(TBNOO_fake_script)()
+local function ZVAOWW_fake_script() -- Start.LocalScript 
 	local script = Instance.new('LocalScript', Start)
 
 	function leftClick()
-		script.Parent.Sound:Play()
 		script.Parent.Parent.Parent.Main.Visible = true
 		script.Parent.Parent.Parent.Frame.Visible = false
 		script.Parent.Parent.Parent.Main.LocalScript.Disabled = false
@@ -293,8 +337,8 @@ local function CAMC_fake_script() -- Start.LocalScript
 	local player = game.Players.LocalPlayer
 	script.Parent.Parent.Parent.Main.Player.Text = "Welcome, " ..player.DisplayName.. " To FoxHub !"
 end
-coroutine.wrap(CAMC_fake_script)()
-local function KKOUL_fake_script() -- Support.LocalScript 
+coroutine.wrap(ZVAOWW_fake_script)()
+local function ZJNP_fake_script() -- Support.LocalScript 
 	local script = Instance.new('LocalScript', Support)
 
 	function leftClick()
@@ -303,8 +347,8 @@ local function KKOUL_fake_script() -- Support.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(KKOUL_fake_script)()
-local function NVGNKE_fake_script() -- Credits.LocalScript 
+coroutine.wrap(ZJNP_fake_script)()
+local function NKEKP_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	function leftClick()
@@ -313,8 +357,8 @@ local function NVGNKE_fake_script() -- Credits.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(NVGNKE_fake_script)()
-local function DEVW_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NKEKP_fake_script)()
+local function GSRETO_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	function leftClick()
@@ -323,9 +367,9 @@ local function DEVW_fake_script() -- TextButton.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(DEVW_fake_script)()
+coroutine.wrap(GSRETO_fake_script)()
 -- Main.LocalScript is disabled.
-local function FMQXO_fake_script() -- TextButton_2.LocalScript 
+local function HXWS_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	function leftClick()
@@ -334,8 +378,8 @@ local function FMQXO_fake_script() -- TextButton_2.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(FMQXO_fake_script)()
-local function DBMZGG_fake_script() -- Main.drag2 
+coroutine.wrap(HXWS_fake_script)()
+local function RWHGOY_fake_script() -- Main.drag2 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -378,4 +422,4 @@ local function DBMZGG_fake_script() -- Main.drag2
 		end
 	end)
 end
-coroutine.wrap(DBMZGG_fake_script)()
+coroutine.wrap(RWHGOY_fake_script)()
