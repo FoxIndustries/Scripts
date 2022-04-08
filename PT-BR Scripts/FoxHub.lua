@@ -235,6 +235,9 @@ TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/ACS"))()
+end)
 
 UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
 UICorner_9.Parent = TextButton_2
@@ -383,28 +386,6 @@ end
 coroutine.wrap(OYTWHS_fake_script)()
 local function TYRWZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
-
-	function leftClick()
-		local plr = game.Players.LocalPlayer
-		local Evt = game.ReplicatedStorage.ACS_Engine.Eventos
-	
-		local Settings = {
-			["ExplosiveHit"] = true,
-			["ExPressure"] = math.huge,
-			["ExpRadius"] = math.huge,
-			["DestroyJointRadiusPercent"] = math.huge,
-			["ExplosionDamage"] = math.huge,
-		}
-	
-	
-		while wait() do 
-			pcall(function()
-				for i,v in pairs(game.Players:GetChildren()) do
-					game.ReplicatedStorage.ACS_Engine.Eventos.Hit:FireServer(v.Character.Head.Position, v.Character.Head, v.Character.Head.Position, Enum.Material.Plastic, Settings)
-				end 
-			end)
-		end
-	end
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
