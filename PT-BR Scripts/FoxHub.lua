@@ -1,3 +1,11 @@
+--[[
+
+FoxIndustries
+Engineer is always here
+FoxDevloper
+
+]]--
+
 -- Instances:
 
 local FoxHub = Instance.new("ScreenGui")
@@ -20,13 +28,20 @@ local WIP = Instance.new("Frame")
 local warnexit_2 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local UICorner_7 = Instance.new("UICorner")
 local Main = Instance.new("Frame")
 local Player = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
 local Scrolling = Instance.new("ScrollingFrame")
 local TextButton_2 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
 
 --Properties:
 
@@ -192,14 +207,12 @@ TextButton.TextWrapped = true
 UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
 UICorner_6.Parent = WIP
 
-UICorner_7.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_7.Parent = Frame
-
 Main.Name = "Main"
 Main.Parent = FoxHub
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Main.BackgroundTransparency = 0.650
 Main.Position = UDim2.new(0.545299172, 0, 0.015948968, 0)
+Main.Selectable = true
 Main.Size = UDim2.new(0, 501, 0, 266)
 Main.Visible = false
 
@@ -215,15 +228,16 @@ Player.TextScaled = true
 Player.TextSize = 14.000
 Player.TextWrapped = true
 
-UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_8.Parent = Player
-
 Scrolling.Name = "Scrolling"
 Scrolling.Parent = Main
 Scrolling.Active = true
 Scrolling.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Scrolling.Position = UDim2.new(0.0160653871, 0, 0.215311006, 0)
-Scrolling.Size = UDim2.new(0, 483, 0, 199)
+Scrolling.Position = UDim2.new(0.0160654038, 0, 0.215311036, 0)
+Scrolling.Size = UDim2.new(0, 483, 0, 208)
+Scrolling.CanvasSize = UDim2.new(0, 0, 2, 4)
+Scrolling.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+Scrolling.ScrollBarThickness = 9
+Scrolling.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 
 TextButton_2.Parent = Scrolling
 TextButton_2.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
@@ -239,12 +253,158 @@ TextButton_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/ACS"))()
 end)
 
-UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_9.Parent = TextButton_2
+TextButton_3.Parent = Scrolling
+TextButton_3.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_3.BackgroundTransparency = 0.650
+TextButton_3.Position = UDim2.new(0, 0, 0.0939849615, 0)
+TextButton_3.Size = UDim2.new(0, 470, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Nocol Exploit"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/Nocol.lua"))()
+end)
+
+TextButton_4.Parent = Scrolling
+TextButton_4.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_4.BackgroundTransparency = 0.650
+TextButton_4.Position = UDim2.new(0, 0, 0.187969923, 0)
+TextButton_4.Size = UDim2.new(0, 470, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Ctrl Delete"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+TextButton_4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/CTRLDelete.lua"))()
+end)
+
+TextButton_5.Parent = Scrolling
+TextButton_5.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_5.BackgroundTransparency = 0.650
+TextButton_5.Position = UDim2.new(0, 0, 0.280075192, 0)
+TextButton_5.Size = UDim2.new(0, 470, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Fly/Unfly (E) | Warn: Can be *Detected*"
+TextButton_5.TextColor3 = Color3.fromRGB(152, 0, 2)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+TextButton_5.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/Fly.lua"))()
+end)
+
+TextButton_6.Parent = Scrolling
+TextButton_6.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_6.BackgroundTransparency = 0.650
+TextButton_6.Position = UDim2.new(0, 0, 0.372208506, 0)
+TextButton_6.Size = UDim2.new(0, 470, 0, 50)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "FE Remove Chairs | Press F"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+TextButton_6.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/RemoveChairs"))()
+end)
+
+TextButton_7.Parent = Scrolling
+TextButton_7.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_7.BackgroundTransparency = 0.650
+TextButton_7.Position = UDim2.new(0, 0, 0.464327782, 0)
+TextButton_7.Size = UDim2.new(0, 470, 0, 50)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "FE Zombie | By: quirky anime boy#7003"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+TextButton_7.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/FE%20Zombie.lua"))()
+end)
+
+TextButton_8.Parent = Scrolling
+TextButton_8.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_8.BackgroundTransparency = 0.650
+TextButton_8.Position = UDim2.new(0, 0, 0.556447089, 0)
+TextButton_8.Size = UDim2.new(0, 470, 0, 50)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "CMD-X | https://discord.gg/34D5dfXppn"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+TextButton_8.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FoxIndustries/Scripts/main/FoxHubThings/CMD-X"))()
+--[[ CMD-X is not mine.
+
+CMD-X Discord: https://discord.gg/34D5dfXppn
+
+https://github.com/CMD-X pigeon#8951
+
+https://github.com/xxhertz fini#7057
+
+https://github.com/Curvn Curvn#2002
+
+]]--
+end)
+
+TextButton_9.Parent = Scrolling
+TextButton_9.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_9.BackgroundTransparency = 0.650
+TextButton_9.Position = UDim2.new(0, 0, 0.740671635, 0)
+TextButton_9.Size = UDim2.new(0, 470, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "W.I.P"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 217, 0)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+TextButton_10.Parent = Scrolling
+TextButton_10.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_10.BackgroundTransparency = 0.650
+TextButton_10.Position = UDim2.new(0, 0, 0.832790911, 0)
+TextButton_10.Size = UDim2.new(0, 470, 0, 50)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "W.I.P"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 217, 0)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14.000
+TextButton_10.TextWrapped = true
+
+TextButton_11.Parent = Scrolling
+TextButton_11.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_11.BackgroundTransparency = 0.650
+TextButton_11.Position = UDim2.new(0, 0, 0.648552358, 0)
+TextButton_11.Size = UDim2.new(0, 470, 0, 50)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "W.I.P"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 217, 0)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14.000
+TextButton_11.TextWrapped = true
+
+TextButton_12.Parent = Scrolling
+TextButton_12.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_12.BackgroundTransparency = 0.650
+TextButton_12.Position = UDim2.new(0, 0, 0.924910247, 0)
+TextButton_12.Size = UDim2.new(0, 470, 0, 50)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "W.I.P"
+TextButton_12.TextColor3 = Color3.fromRGB(255, 217, 0)
+TextButton_12.TextScaled = true
+TextButton_12.TextSize = 14.000
+TextButton_12.TextWrapped = true
 
 -- Scripts:
 
-local function VHZD_fake_script() -- Frame.Drag 
+local function ZKFRAT_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -287,8 +447,8 @@ local function VHZD_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(VHZD_fake_script)()
-local function ZSIC_fake_script() -- exit1.LocalScript 
+coroutine.wrap(ZKFRAT_fake_script)()
+local function YEKZ_fake_script() -- exit1.LocalScript 
 	local script = Instance.new('LocalScript', exit1)
 
 	
@@ -298,8 +458,8 @@ local function ZSIC_fake_script() -- exit1.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(ZSIC_fake_script)()
-local function XYIFNP_fake_script() -- kill.LocalScript 
+coroutine.wrap(YEKZ_fake_script)()
+local function SCXQK_fake_script() -- kill.LocalScript 
 	local script = Instance.new('LocalScript', kill)
 
 	function leftClick()
@@ -308,8 +468,8 @@ local function XYIFNP_fake_script() -- kill.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(XYIFNP_fake_script)()
-local function KKRRFZ_fake_script() -- exit.LocalScript 
+coroutine.wrap(SCXQK_fake_script)()
+local function WSNJ_fake_script() -- exit.LocalScript 
 	local script = Instance.new('LocalScript', exit)
 
 	function leftClick()
@@ -318,8 +478,8 @@ local function KKRRFZ_fake_script() -- exit.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(KKRRFZ_fake_script)()
-local function YHUJ_fake_script() -- Start.LocalScript 
+coroutine.wrap(WSNJ_fake_script)()
+local function DTDNFP_fake_script() -- Start.LocalScript 
 	local script = Instance.new('LocalScript', Start)
 
 	function leftClick()
@@ -332,8 +492,8 @@ local function YHUJ_fake_script() -- Start.LocalScript
 	local player = game.Players.LocalPlayer
 	script.Parent.Parent.Parent.Main.Player.Text = "Welcome, " ..player.DisplayName.. " To FoxHub !"
 end
-coroutine.wrap(YHUJ_fake_script)()
-local function YQOCIID_fake_script() -- Support.LocalScript 
+coroutine.wrap(DTDNFP_fake_script)()
+local function VBUO_fake_script() -- Support.LocalScript 
 	local script = Instance.new('LocalScript', Support)
 
 	function leftClick()
@@ -342,8 +502,8 @@ local function YQOCIID_fake_script() -- Support.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(YQOCIID_fake_script)()
-local function SKIHO_fake_script() -- Credits.LocalScript 
+coroutine.wrap(VBUO_fake_script)()
+local function CHJZQ_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	function leftClick()
@@ -352,8 +512,8 @@ local function SKIHO_fake_script() -- Credits.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(SKIHO_fake_script)()
-local function TFQR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CHJZQ_fake_script)()
+local function XYRAT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	function leftClick()
@@ -362,13 +522,13 @@ local function TFQR_fake_script() -- TextButton.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
 end
-coroutine.wrap(TFQR_fake_script)()
-local function OYTWHS_fake_script() -- Main.LocalScript 
+coroutine.wrap(XYRAT_fake_script)()
+local function HDXADDZ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
 	
-	local clicked = script.j.Value
+	local clicked = false
 	
 	local function Input(input, gameProcessedEvent)
 		if input.KeyCode == Enum.KeyCode.Q then
@@ -383,14 +543,8 @@ local function OYTWHS_fake_script() -- Main.LocalScript
 	end
 	UserInputService.InputBegan:Connect(Input)
 end
-coroutine.wrap(OYTWHS_fake_script)()
-local function TYRWZ_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-	
-	script.Parent.MouseButton1Click:Connect(leftClick)
-end
-coroutine.wrap(TYRWZ_fake_script)()
-local function SFZF_fake_script() -- Main.drag2 
+coroutine.wrap(HDXADDZ_fake_script)()
+local function PUYC_fake_script() -- Main.Dragify 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -433,4 +587,4 @@ local function SFZF_fake_script() -- Main.drag2
 		end
 	end)
 end
-coroutine.wrap(SFZF_fake_script)()
+coroutine.wrap(PUYC_fake_script)()
