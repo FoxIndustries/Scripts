@@ -1,11 +1,3 @@
---[[
-
-FoxIndustries
-Engineer is always here
-FoxDevloper
-
-]]--
-
 -- Instances:
 
 local FoxHub = Instance.new("ScreenGui")
@@ -360,11 +352,14 @@ TextButton_9.BackgroundTransparency = 0.650
 TextButton_9.Position = UDim2.new(0, 0, 0.740671635, 0)
 TextButton_9.Size = UDim2.new(0, 470, 0, 50)
 TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "W.I.P"
-TextButton_9.TextColor3 = Color3.fromRGB(255, 217, 0)
+TextButton_9.Text = "Pendulum Hub (R6 Only)"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextScaled = true
 TextButton_9.TextSize = 14.000
 TextButton_9.TextWrapped = true
+TextButton_9.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end)
 
 TextButton_10.Parent = Scrolling
 TextButton_10.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
@@ -453,7 +448,7 @@ local function YEKZ_fake_script() -- exit1.LocalScript
 
 	
 	function leftClick()
-		script.Parent.Parent.warn.Visible = true
+		script.Parent.Parent.warnexit.Visible = true
 	end
 	
 	script.Parent.MouseButton1Click:Connect(leftClick)
